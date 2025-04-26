@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+}
+nav>ul{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+nav>ul>li>a{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* home container */
+#homecontainer,#aboutcontainer,#registerContainer,#loginContainer{
+    height: calc(100vh - 70px);
+    width: 100%;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgimage{
+    background-image: url(https://jooinn.com/images/abstract-background-291.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#homecontainer > h1 {
+    font-size: 50px;
+}
+/* register page form */
+form{
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 20px;
+}
+form>.form-group{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+form>.form-group>label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+form>.form-group>input{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+}
+form>.form-group>.btn{
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+}
+form>.form-group>.btn:hover{
+    background-color: rgb(71, 29, 111);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Products */
+#container{
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 0 5px gainsboro;
+}
+#container>article{
+    /* border: 1px solid black; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#container>img{
+    height: 100%;
+    max-width: 150px;
+}
+#container>h4{
+    padding: 0 20px;
+}
+#container>span{
+    padding: 10px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+}
